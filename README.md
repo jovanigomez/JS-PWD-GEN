@@ -15,3 +15,4 @@ In this challenge I added javascript to make the application function properly.
 * https://github.com/jovanigomez/JS-PWD-GEN
 
 # SCREENSHOT:
+![PasswordGen.png](./assests/imgaes/PasswordGen.png)
