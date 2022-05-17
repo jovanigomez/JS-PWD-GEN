@@ -11,12 +11,20 @@ var numericalChar = "01234567890";
 var specialChar = "!@#$%^&*()_+";
 
 function generatePassword() {
- 
+
   var password = "";
-  var passwordChar = "";
+  var passwordCharacters = "";
   
-  var passwordLenght = prompt("8 characters")
-  passwordLengthUser = parseInt(passwordLength);
+  var passwordLength = prompt("8 characters")
+  passwordLength = parseInt(passwordLength);
+
+  if (passwordLength < 8) {
+    return "";
+  }
+
+  if (passwordLength > 128) {
+    return "";
+  }
   
   
 
@@ -35,6 +43,6 @@ function generatePassword() {
 
 // Add event listener to generate button
 
- generateBtn.addEventListener("click", writePassword);
+ generateBtn.addEventListener("click", generatePassword);
 
  
