@@ -11,19 +11,16 @@ var specialChar = ["!","@","#","$","%","^","&","*","(",")","_","+"];
 return element.toUpperCase();
 });
 
-  var password = "";
-  var passwordCharacters = "";
+  var passwordlength = prompt("how long would yuo like your pass word to be? 8 or 128");
+  var includelowercasecharacter = prompt("would you like lowercase?", "yes") == "yes"; 
+  console.log(includelowercasechar);
+  var includeuppercasechar = prompt("want some upper case?", "yes") == "yes";
+  var includespecialchar = prompt("wanna sprinkle some speacial characters?", "yes") == "yes";
+  var numericalChar = prompt("would you like some numbers too?","yes") == "yes";
+
+  let password = "";
   
-  var passwordLength = prompt("8 characters")
-  passwordLength = parseInt(passwordLength);
-
-  if (passwordLength < 8) {
-    return "";
-  }
-
-  if (passwordLength > 128) {
-    return "";
-  }
+  
   
   
 
@@ -34,7 +31,8 @@ return element.toUpperCase();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  var password = document.querySelector("#password"); 
+  var password = document.querySelector("#password");
+  passwordText.value = password;
   
   }
 
