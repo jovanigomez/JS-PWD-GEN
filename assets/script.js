@@ -13,16 +13,21 @@ return element.toUpperCase();
 
   var passwordlength = prompt("how long would you like your password to be 8 or 128?", "yes") == "yes";
   var includelowercasecharacter = prompt("would you like lowercase?", "yes") == "yes"; 
-  console.log(includelowercasechar);
-  var includeuppercasechar = prompt("want some upper case?", "yes") == "yes";
+  console.log(includelowercasecharacter);
+  var includeuppercasechar = prompt("want some uppercase?", "yes") == "yes";
   var includespecialchar = prompt("wanna sprinkle some speacial characters?", "yes") == "yes";
   var numericalchar = prompt("would you like some numbers too?","yes") == "yes";
 
   let password = "";
   
- 
+ console.log(uppercaseChar);
   
-
+  while (password.length <= passwordlength) {
+    if (includelowercasecharacter) {
+    if (password,length == passwordlength) break;
+   password += lowercaseChar[Math.floor(Math.random() * lowercaseChar.length)];
+    
+  }
   
 
   function writePassword() {
