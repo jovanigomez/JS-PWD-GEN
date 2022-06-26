@@ -41,7 +41,10 @@ return element.toUpperCase();
     }
   }
   
+  const shuffled = password.split('').sort(function() {return 0.5-Math.random()}).join('');
+  return shuffled;
 
+}
   function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -53,6 +56,8 @@ return element.toUpperCase();
   }
 
 }
+  
+
 
 // Add event listener to generate button
 
