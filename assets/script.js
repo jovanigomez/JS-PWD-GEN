@@ -14,9 +14,9 @@ return element.toUpperCase();
   var passwordlength = prompt("how long would you like your password to be 8 or 128?", "yes") == "yes";
   var includelowercasecharacter = prompt("would you like lowercase?", "yes") == "yes"; 
   console.log(includelowercasecharacter);
-  var includeuppercasechar = prompt("want some uppercase?", "yes") == "yes";
-  var includespecialchar = prompt("wanna sprinkle some speacial characters?", "yes") == "yes";
-  var numericalchar = prompt("would you like some numbers too?","yes") == "yes";
+  var includeuppercasecharacters = prompt("want some uppercase?", "yes") == "yes";
+  var includespeacialcharacters = prompt("wanna sprinkle some speacial characters?", "yes") == "yes";
+  var includenumericalcharacters = prompt("would you like some numbers too?","yes") == "yes";
 
   let password = "";
   
