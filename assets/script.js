@@ -26,7 +26,19 @@ return element.toUpperCase();
     if (includelowercasecharacter) {
     if (password,length == passwordlength) break;
    password += lowercaseChar[Math.floor(Math.random() * lowercaseChar.length)];
-    
+    }
+    if (includespeacialcharacters) {
+      if (password.length == passwordlength) break;
+      password += specialChar[Math.floor(Math.random() * specialChar.length)];
+    }
+    if (includenumericalcharacters) {
+      if (password.length == passwordlength) break;
+      password += numericalChar[Math.floor(Math.random() * numericalChar.lenght)];
+    }
+    if (includeuppercasecharacters) {
+      if (password.length == passwordlength) break;
+      password += uppercaseChar[Math.floor(Math.random() * uppercaseChar.lenght)];
+    }
   }
   
 
