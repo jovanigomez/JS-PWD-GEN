@@ -20,24 +20,24 @@ return element.toUpperCase();
 
   let password = "";
   
- console.log(uppercaseChar);
+ console.log(uppercaseCharacters);
   
   while (password.length <= passwordlength) {
     if (includelowercasecharacter) {
     if (password,length == passwordlength) break;
-   password += lowercaseChar[Math.floor(Math.random() * lowercaseChar.length)];
+   password += lowercaseCharacters[Math.floor(Math.random() * lowercaseChar.length)];
     }
     if (includespeacialcharacters) {
       if (password.length == passwordlength) break;
-      password += specialChar[Math.floor(Math.random() * specialChar.length)];
+      password += specialCharacters[Math.floor(Math.random() * specialChar.length)];
     }
     if (includenumericalcharacters) {
       if (password.length == passwordlength) break;
-      password += numericalChar[Math.floor(Math.random() * numericalChar.lenght)];
+      password += numericalCharacters[Math.floor(Math.random() * numericalChar.length)];
     }
     if (includeuppercasecharacters) {
       if (password.length == passwordlength) break;
-      password += uppercaseChar[Math.floor(Math.random() * uppercaseChar.lenght)];
+      password += uppercaseCharacters[Math.floor(Math.random() * uppercaseChar.length)];
     }
   }
   
@@ -49,8 +49,8 @@ return element.toUpperCase();
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-  var password = document.querySelector("#password");
+  //passwordText.value = password;
+  //var password = document.querySelector("#password");
   passwordText.value = password;
   
 }
