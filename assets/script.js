@@ -43,7 +43,7 @@ return element.toUpperCase();
   
   const shuffled = password.split('').sort(function() {return 0.5-Math.random()}).join('');
   return shuffled;
-
+  
 }
   function writePassword() {
   var password = generatePassword();
@@ -53,9 +53,9 @@ return element.toUpperCase();
   var password = document.querySelector("#password");
   passwordText.value = password;
   
-  }
-
 }
+
+
   
 
 
