@@ -15,14 +15,17 @@ return element.toUpperCase();
   var includelowercasecharacter = prompt("would you like lowercase?", "yes") == "yes"; 
   console.log(includelowercasecharacter);
   var includeuppercasecharacters = prompt("want some uppercase?", "yes") == "yes";
+  //console.log(includeuppercasecharacters);
   var includespeacialcharacters = prompt("wanna sprinkle some speacial characters?", "yes") == "yes";
+  //console.log(includespeacialcharacters);
   var includenumericalcharacters = prompt("would you like some numbers too?","yes") == "yes";
+  //console.log(includenumericalcharacters);
 
   let password = "";
   
- //console.log(includeuppercasecharacters);
- //console.log(includenumericalcharacters);
- //console.log(includespeacialcharacters);
+ 
+ 
+ 
  
 
   while (password.length <= passwordlength) {
@@ -45,7 +48,6 @@ return element.toUpperCase();
   }
   
   const shuffled = password.split('').sort(function() {return 0.5-Math.random()}).join('');
-  
   return shuffled;
   
 }
@@ -65,6 +67,6 @@ return element.toUpperCase();
 
 // Add event listener to generate button
 
- generateBtn.addEventListener("click", generatePassword);
+ generateBtn.addEventListener("click", writePassword);
 
  
