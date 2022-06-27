@@ -3,7 +3,8 @@
 this website generates random passwords for users.
 
 # CHALLENGE: 
-In this challenge I added javascript to make the application function properly. 
+In this challenge I had to incorperate javascript to fufill user experience/criteria. 
+By doing so the user is able to click a Generate Password button to populate a total randomized password.
 
 # LANGUAGES:
 - JavaScript
@@ -15,4 +16,4 @@ In this challenge I added javascript to make the application function properly.
 * https://github.com/jovanigomez/JS-PWD-GEN
 
 # SCREENSHOT:
-![PasswordGen.png](./assests/PasswordGen.png)
+![PasswordGen.png](./assets/PasswordGen.png)

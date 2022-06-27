@@ -46,7 +46,6 @@ return element.toUpperCase();
       password += uppercaseCharacters[Math.floor(Math.random() * uppercaseCharacters.length)];
     }
   }
-  
   const shuffled = password.split('').sort(function() {return 0.5-Math.random()}).join('');
   return shuffled;
   
@@ -54,7 +53,6 @@ return element.toUpperCase();
   function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   //passwordText.value = password;
   //var password = document.querySelector("#password");
   passwordText.value = password;
